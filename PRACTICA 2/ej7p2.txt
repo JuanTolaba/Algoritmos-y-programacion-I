@@ -1,0 +1,32 @@
+7. Dada la siguiente función marque las invocaciones a dicha función que considere válidas:
+
+function cuadrado(x:integer): integer;
+begin
+ cuadrado:= x*x;
+end;
+
+
+
+
+a. Write(cuadrado(8)); //valido, el valor que se esta enviando como parametro cumple con ser entero. Y una funcion puede ser llamada dentro de un write
+
+
+b. c:= cuadrado(8);             //la primera linea de codigo esta bien, pero en la segunda se esta volviendo a llamar a la funcion sin mandar nada como parametro
+   Write(cuadrado);            //dara error
+
+
+c. If ( cuadrado = 64 ) then //  es posible llamar a una funcion dentro de un if, pero falta mandarle un parametro
+
+d. Write(‘8*8=64’);   //es correcto, pero no tiene sentido, no se esta invocando a la funcion
+
+e. cuadrado(8);  //se llama a la funcion enviando un parametro correctamente pero no hay variable que almacene el valor que devuelve la funcion
+
+f. c:= cuadrado(8); //se almacena y llama correctamente la funcion, imprimiendo luego lo que devolvio, guardado en la variable.
+   Write (c);     
+
+g. cuadrado(8, c);         //el procedimiento espera recibir solamente un parametro y se le esta mandando 2, dara error.
+   Write (c);                
+
+
+
+h. If ( cuadrado(8) = 64 ) then     //es correcto 
