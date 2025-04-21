@@ -21,7 +21,10 @@ BEGIN
           else 
             totalLeidos:=totalLeidos+1;
         end;
-        writeln ('se leyeron ',totalLeidos, 'numeros');
+        if(totalLeidos=10)then
+          writeln ('se leyeron 10 numeros, el 0 no se ha encontrado')
+        else 
+          writeln ('el 0 se ha encontrado y es por eso que se ha detenido el ingreso, se han leido ',totalLeidos);
      
 END.
             
