@@ -1,7 +1,7 @@
 {10. Un local de ropa desea analizar las ventas realizadas en el último mes. Para ello se lee por cada día del mes, los
 montos de las ventas realizadas. La lectura de montos para cada día finaliza cuando se lee el monto 0. Se asume
 un mes de 31 días. Informar la cantidad de ventas por cada día, y el monto total acumulado en ventas de todo
-el mes.
+el mes.}
 
 
 program ej10p1;
